@@ -1,0 +1,184 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'SUIT', sans-serif;
+}
+
+.main__section {
+    width: 100%;
+    /* height: 100vh; */
+
+    border-bottom: #E9E9E9 solid 1px;
+}
+
+.main__section:last-child {
+    border-bottom: none;
+}
+
+/* Main Hero Section */
+.hero {
+    padding-bottom: 5%;
+}
+
+.hero>.center {
+    padding-left: 1%;
+}
+
+.hero>.center>.title>p {
+    font-size: 10vw;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+.hero>.center>.title>.job {
+    letter-spacing: -2px;
+}
+
+.hero>.center>.description {
+    color: #999999;
+}
+
+.hero>.center>.description>p {
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+/* Main Introduce Section */
+
+.intro {
+    padding-bottom: 2%;
+}
+
+.intro>.center>div {
+    padding-left: 1%;
+}
+
+.intro>.center>.title {
+    font-size: 3vw;
+    font-weight: 500;
+
+    border-bottom: #E9E9E9 solid 1px;
+}
+
+.intro>.center>.introduce {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    font-size: 1.7vw;
+    font-weight: 300;
+    color: #444444;
+
+    line-height: 1.3;
+}
+
+.intro>.center>.introduce>p {
+    padding-bottom: 2%;
+}
+
+.intro>.center>.introduce>p:last-child {
+    padding: 0;
+}
+
+/* Main Skill Section */
+
+.skill {}
+
+.skill>.center>div {
+    padding-left: 1%;
+}
+
+.skill>.center>.title {
+    font-size: 3vw;
+    font-weight: 500;
+
+    border-bottom: #E9E9E9 solid 1px;
+    /* text-align: right; */
+}
+
+.skill>.center>.skill {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.skill>.center>.skill>.skill__item {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+    border-right: #E9E9E9 solid 1px;
+
+    display: flex;
+    justify-items: flex-start;
+    box-sizing: border-box;
+
+}
+
+.skill>.center>.skill>.skill__item>.description {
+    flex: 4;
+    font-size: 1.7vw;
+    font-weight: 200;
+    line-height: 2;
+}
+
+.skill>.center>.skill>.skill__item>.title {
+    flex: 1;
+    font-size: 2.2vw;
+    font-weight: 200;
+
+    color: #999;
+}
+
+
+.career>.center>div {
+    padding-left: 1%;   
+}
+
+.career>.center>.title {
+    font-size: 3vw;
+    font-weight: 500;
+
+    border-bottom: #E9E9E9 solid 1px;
+    /* text-align: right; */
+}
+
+.career>.center>.career{
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.career>.center>.career>.career_items {}
+
+.career>.center>.career>.career_items {
+    display: flex;
+}
+
+.career>.center>.career>.career_items>.career__item>.title {
+    font-size: 3vw;
+    font-weight: 200;
+    text-align: center;
+}
+.career>.center>.career>.career_items>.career__item>.title>.since{
+    font-size: 1.2vw;
+    color: #999;
+}
+
+.ending>.center>.title{
+    font-size: 3vw;
+    font-weight: 100;
+
+    padding: 5% 0;
+
+    border-bottom: #E9E9E9 solid 1px;
+    text-align: right;
+}
+.ending>.center>.title>.contact{
+
+    font-size: 1.5vw;
+}
