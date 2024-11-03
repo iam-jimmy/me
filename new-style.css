@@ -1,0 +1,246 @@
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'SUIT', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2vw;
+    box-sizing: border-box;
+}
+
+.nav__header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    z-index: 100;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+}
+
+.nav__header > .container {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.nav__header-mini > .container {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.nav__header > .container > div {
+    width: 100%;
+    flex: 1;
+}
+
+.nav__header > .container > .nav__header_logo > div {
+    float: left;
+    width: 25px;
+    height: 3px;
+    background: #555;
+    margin-right: 5px;
+}
+
+.nav__header > .container > .nav__header_logo > .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 10px;
+}
+
+.nav__header > .container > .nav__header_logo > .space {
+    width: 10px;
+    height: 2px;
+    background: none;
+}
+
+.nav__header > .container > .nav__header_menu > .nav__header_menu_box {
+    /*font-family: 'DOSIyagiMedium', serif;*/
+    float: right;
+    display: flex;
+    gap: 10vw;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #000;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    padding-top: 170px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#main .main__intro > p:first-child {
+    font-size: 5em;
+    font-weight: 300;
+    margin-bottom: 1vh;
+}
+
+#main .main__intro > p:last-child {
+    font-size: 3em;
+    font-weight: 300;
+    color: #999;
+}
+
+
+#main .main__intro {
+    width: 100%;
+    height: 100%;
+    padding: 15vh 0;
+    box-sizing: border-box;
+}
+
+
+#about {
+    width: 100%;
+    /*min-height: 100%;*/
+    height: auto;
+}
+
+#about .about__photos {
+    padding-top: 10vh;
+    display: flex;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    gap: 10%;
+
+}
+
+#about .about__photos > div {
+    height: 800px;
+    width: 800px;
+    background-size: cover;
+    position: relative;
+    flex: 1;
+}
+
+#about .about__photos > div:first-child:hover::before {
+    justify-self: start;
+    content: '(2024 Goodoc Workshop)';
+    position: absolute;
+    bottom: -3%;
+    color: #999;
+    font-size: 0.9em;
+}
+
+#about .about__photos > div:last-child:hover::before {
+    content: '(2024 Summer Vacation in Mongolia)';
+    position: absolute;
+    bottom: -3%;
+    color: #999;
+    font-size: 0.9em;
+}
+
+#career {
+    width: 100%;
+    height: auto;
+}
+
+#career > .container {
+    padding-top: 10%;
+    padding-bottom: 15vh;
+}
+
+
+#career .career__box {
+    display: flex;
+    /*flex-direction: column;*/
+    gap: 10%;
+    text-align: left;
+}
+
+#career .career__box > div {
+    flex: 1;
+}
+
+#career .career__box > .career__title {
+    font-size: 2em;
+    font-weight: 300;
+    color: #666;
+    width: 100%;
+    text-align: left;
+}
+
+#career .career__box > .career__corps {
+    flex-direction: column;
+    display: flex;
+    gap: 2vh;
+}
+
+#career .career__box > .career__corps > div {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    font-size: 2em;
+    font-weight: 300;
+    color: #333;
+    display: flex;
+    text-align: left;
+    padding-bottom: 2vh;
+    border-bottom: #EEE dashed 1px;
+}
+
+#career .career__box > .career__corps > div > span {
+    display: block;
+    flex: 1;
+}
+
+#career .career__box > .career__corps > div > span:last-child {
+    color: #999;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+footer > .container {
+    /*padding-top: 1vh;*/
+    padding-bottom: 1vh;
+}
+
+footer .footer__box {
+    width: 100%;
+    /*height: 300px;*/
+    /*border: #999 solid 5px;*/
+    /*background-color: #000;*/
+    border-radius: 5px;
+    display: flex;
+    align-content: flex-end;
+}
+
+footer .footer__box > .footer__box__center {
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: flex;
+
+    /*color: #FFF;*/
+}
+footer .footer__box > .footer__box__center > .footer__box__center_title{
+    /*font-size: 2em;*/
+    /*font-weight: 200;*/
+    /*padding-bottom: 3%;*/
+}
+footer .footer__box > .footer__box__center > .footer__box__center_sub-title{
+    /*font-size: 1.2em;*/
+    /*font-weight: 100;*/
+}
