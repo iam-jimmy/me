@@ -120,7 +120,7 @@ body {
     padding-top: 10vh;
     display: flex;
     /*grid-template-columns: repeat(2, 1fr);*/
-    gap: 10%;
+    gap: 5%;
 
 }
 
@@ -128,6 +128,7 @@ body {
     height: 800px;
     width: 800px;
     background-size: cover;
+    background-position: center;
     position: relative;
     flex: 1;
 }
@@ -162,8 +163,7 @@ body {
 
 #career .career__box {
     display: flex;
-    /*flex-direction: column;*/
-    gap: 10%;
+    gap: 5%;
     text-align: left;
 }
 
@@ -198,13 +198,149 @@ body {
     border-bottom: #EEE dashed 1px;
 }
 
-#career .career__box > .career__corps > div > span {
-    display: block;
+#career .career__box > .career__corps > div > div {
+    flex: 2;
+}
+
+#career .career__box > .career__corps > div > div > span {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#career .career__box > .career__corps > div > div:first-child > span:hover::after {
+    content: 'Asia/Seoul';
+    font-size: 0.8em;
+    color: #999;
+    font-weight: 300;
+    padding-left: 5%;
+}
+
+#career .career__box > .career__corps > div > div:last-child {
+    color: #999;
     flex: 1;
 }
 
-#career .career__box > .career__corps > div > span:last-child {
+
+#career-detail {
+    width: 100%;
+    height: auto;
+}
+
+#career-detail > .container {
+}
+
+#career-detail .career-detail__box {
+    /*padding-top: 5%;*/
+    padding-bottom: 10%;
+}
+
+#career-detail .career-detail__box > .career-detail_corp {
+    display: flex;
+    gap: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    border-bottom: #EEE dashed 1px;
+}
+
+#career-detail .career-detail__box > .career-detail_corp:last-child {
+    border-bottom: none;
+}
+
+#career-detail .career-detail__box > .career-detail_corp > div {
+    flex: 1;
+}
+
+#career-detail .career-detail__box > .career-detail_corp > .left {
+    flex: 3;
+}
+
+
+#career-detail .career-detail__box > .career-detail_corp > .right {
+    flex: 5
+}
+
+#career-detail .career-detail__box > .career-detail_corp > .right > .corp_info {
+    padding-bottom: 30px;
+}
+
+#career-detail .career-detail__box > .career-detail_corp > .right > .corp_info > p:first-child {
+    font-size: 2em;
+    color: #333;
+}
+
+#career-detail .career-detail__box > .career-detail_corp > .right > .position {
+    font-size: 1.2em;
+    padding-bottom: 30px;
+}
+#career-detail .career-detail__box > .career-detail_corp > .right > .position > p:first-child {
+    font-size: 1em;
     color: #999;
+}
+
+#career-detail .career-detail__box > .career-detail_corp > .right > .work_ex {
+    padding-bottom: 30px;
+}
+#career-detail .career-detail__box > .career-detail_corp > .right > .work_ex > p:first-child{
+    font-size: 1em;
+    color: #999;
+}
+#career-detail .career-detail__box > .career-detail_corp > .right > .work_ex > ul {
+    padding-left: 30px;
+}
+
+#career-detail .career-detail__box > .career-detail_corp > .right > .tech_stack {
+
+}
+#career-detail .career-detail__box > .career-detail_corp > .right > .tech_stack > p:first-child{
+    font-size: 1em;
+    color: #999;
+}
+
+
+#career-detail .career-detail__box > .career-detail_corp > .left > div {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#ending {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    position: relative;
+}
+#ending::before {
+    content: '© 2024 Jimin Kim. Crafted with care. All rights reserved.';
+    position: absolute;
+    bottom: 20px;
+    color: #FFF;
+    font-size: 0.7em;
+    font-weight: 100;
+    left: 20px;
+}
+#ending .ending__box {
+    font-size: 2em;
+    width: 100%;
+    height: 200px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+#ending .ending__box > div{
+    text-align: center;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#ending .ending__box > div > p > a{
+    color: #FFF;
 }
 
 footer {
@@ -235,12 +371,14 @@ footer .footer__box > .footer__box__center {
 
     /*color: #FFF;*/
 }
-footer .footer__box > .footer__box__center > .footer__box__center_title{
+
+footer .footer__box > .footer__box__center > .footer__box__center_title {
     /*font-size: 2em;*/
     /*font-weight: 200;*/
     /*padding-bottom: 3%;*/
 }
-footer .footer__box > .footer__box__center > .footer__box__center_sub-title{
+
+footer .footer__box > .footer__box__center > .footer__box__center_sub-title {
     /*font-size: 1.2em;*/
     /*font-weight: 100;*/
 }
